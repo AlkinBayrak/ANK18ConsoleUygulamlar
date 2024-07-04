@@ -66,7 +66,7 @@
 
              int yariccap;
 
-             double h = 22 / 7;
+             double h = 22 / 7.0;
 
              Console.WriteLine("Yarı çapı giriniz:");
 

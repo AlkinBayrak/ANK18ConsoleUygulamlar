@@ -92,7 +92,7 @@
 
              Console.WriteLine($"Yaş: {islem}");*/
 
-            int s1, s2;
+           /* int s1, s2;
 
             Console.WriteLine("İki adet sayı giriniz :");
 
@@ -101,7 +101,7 @@
 
             int islem = (s1*s1) + (s2*s2);
 
-            Console.WriteLine($"Karelerinin toplamı : {islem}");
+            Console.WriteLine($"Karelerinin toplamı : {islem}");*/
         }
     }
 }

@@ -4,19 +4,22 @@
     {
         static void Main(string[] args)
         {
-            /*int fiyat;
+            /*soru 1*/
+            /*
+            int fiyat;
 
             Console.WriteLine("Fiyat giriniz:");
 
             fiyat = Convert.ToInt32(Console.ReadLine());
 
-            int kdv = (fiyat * 20)/100;
+            int kdv = (fiyat * 20) / 100;
 
-            int islem = fiyat + kdv;    
+            int islem = fiyat + kdv;
 
-                Console.WriteLine($"Yeni fiyat : {islem}");
+            Console.WriteLine($"Yeni fiyat : {islem}");
 
-            Console.WriteLine("-------------------------");*/
+            Console.WriteLine("-------------------------");
+            */
 
             /* int kenar;
 
@@ -63,6 +66,40 @@
             Console.WriteLine($"Hesaplanan değer: {islem}");
 
             Console.WriteLine("-------------------------");*/
+
+            /* double para, dolar, euro;
+
+             Console.WriteLine("Para miktarını giriniz :");
+
+             para = Convert.ToDouble(Console.ReadLine());
+
+             Console.WriteLine("Dolar kurunu giriniz :");
+
+             dolar = Convert.ToDouble(Console.ReadLine());
+
+             Console.WriteLine("Euro kurunu giriniz:");
+
+             euro = Convert.ToDouble(Console.ReadLine());
+
+             double islem = para / dolar;
+             double islem2 = para / euro;
+
+
+             Console.WriteLine($"Hesaplanan dolar tutarı: {islem} Hesaplanan euro tutarı: {islem2}");*/
+
+
+            /*int a,b;
+
+            Console.WriteLine("İki adet kenar uzunluğu giriniz:");
+
+            a = Convert.ToInt32(Console.ReadLine());
+
+            b = Convert.ToInt32(Console.ReadLine());
+
+            int islem = (a * b) / 2.0;
+
+            Console.WriteLine($"Üçgenin alanı : {islem}");*/
+
 
 
 

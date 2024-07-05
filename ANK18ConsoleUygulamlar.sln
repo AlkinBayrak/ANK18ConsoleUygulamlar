@@ -5,7 +5,9 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppAlpHoca", "ConsoleAppAlpHoca\ConsoleAppAlpHoca.csproj", "{7DF14AF1-28AC-4E51-AEAC-6E54ACAF6EE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppOdevler", "ConsoleAppOdevler\ConsoleAppOdevler.csproj", "{D555CFCA-5161-4D60-B9EE-938F7EEF9B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppOdevler", "ConsoleAppOdevler\ConsoleAppOdevler.csproj", "{D555CFCA-5161-4D60-B9EE-938F7EEF9B62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppAritmetikOpe", "ConsoleAppAritmetikOpe\ConsoleAppAritmetikOpe.csproj", "{919E8C88-A3C4-41AE-9437-A9BCF3FFF92F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D555CFCA-5161-4D60-B9EE-938F7EEF9B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D555CFCA-5161-4D60-B9EE-938F7EEF9B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D555CFCA-5161-4D60-B9EE-938F7EEF9B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{919E8C88-A3C4-41AE-9437-A9BCF3FFF92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{919E8C88-A3C4-41AE-9437-A9BCF3FFF92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{919E8C88-A3C4-41AE-9437-A9BCF3FFF92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{919E8C88-A3C4-41AE-9437-A9BCF3FFF92F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

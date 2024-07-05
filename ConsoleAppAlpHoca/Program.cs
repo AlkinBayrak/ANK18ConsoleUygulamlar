@@ -92,16 +92,20 @@
 
              Console.WriteLine($"Yaş: {islem}");*/
 
-           /* int s1, s2;
+            /* int s1, s2;
 
-            Console.WriteLine("İki adet sayı giriniz :");
+             Console.WriteLine("İki adet sayı giriniz :");
 
-            s1 = Convert.ToInt32(Console.ReadLine());
-            s2 = Convert.ToInt32(Console.ReadLine());
+             s1 = Convert.ToInt32(Console.ReadLine());
+             s2 = Convert.ToInt32(Console.ReadLine());
 
-            int islem = (s1*s1) + (s2*s2);
+             int islem = (s1*s1) + (s2*s2);
 
-            Console.WriteLine($"Karelerinin toplamı : {islem}");*/
+             Console.WriteLine($"Karelerinin toplamı : {islem}");*/
+
+            
+
+
         }
     }
 }

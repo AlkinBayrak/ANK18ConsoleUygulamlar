@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppOdevler", "Consol
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppAritmetikOpe", "ConsoleAppAritmetikOpe\ConsoleAppAritmetikOpe.csproj", "{919E8C88-A3C4-41AE-9437-A9BCF3FFF92F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppSwitchCase", "ConsoleAppSwitchCase\ConsoleAppSwitchCase.csproj", "{5FFF5117-A7F5-4BA8-A0C0-600AA21D9EEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppSwitchCase", "ConsoleAppSwitchCase\ConsoleAppSwitchCase.csproj", "{5FFF5117-A7F5-4BA8-A0C0-600AA21D9EEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppKosulUyg", "ConsoleAppKosulUyg\ConsoleAppKosulUyg.csproj", "{F78D706D-AC71-4321-AA1E-2F2F465F30BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5FFF5117-A7F5-4BA8-A0C0-600AA21D9EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FFF5117-A7F5-4BA8-A0C0-600AA21D9EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FFF5117-A7F5-4BA8-A0C0-600AA21D9EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F78D706D-AC71-4321-AA1E-2F2F465F30BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F78D706D-AC71-4321-AA1E-2F2F465F30BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F78D706D-AC71-4321-AA1E-2F2F465F30BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F78D706D-AC71-4321-AA1E-2F2F465F30BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

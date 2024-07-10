@@ -50,7 +50,7 @@ namespace ConsoleAppKosulUyg
 
             ort = s1 * 0.40 + s2 * 0.60;
 
-            if(s1 < 0 || s1 > 100 &&  s2 < 0 || s2 > 100)
+            if(s1 < 0 || s1 > 100 ||  s2 < 0 || s2 > 100)
                 Console.WriteLine("Geçersiz not");
 
             switch (ort)
@@ -106,6 +106,7 @@ namespace ConsoleAppKosulUyg
                     Console.WriteLine("Pazar");
                     break;
                 default:
+                    Console.WriteLine("Geçersiz gün");
                     break;
             }
         }
@@ -123,6 +124,37 @@ namespace ConsoleAppKosulUyg
                 Console.WriteLine($"Ödenecek tutar: {sayi*0.85}");
             else if (sayi >= 600)
                 Console.WriteLine($"Ödenecek tutar: {sayi*0.80}");
+            else 
+                Console.WriteLine($"Ödenecek tutar : {sayi}");
+
+            Console.WriteLine("------------------");
+
+            double miktar;
+            Console.WriteLine("Miktarı giriniz:");
+            miktar = Convert.ToDouble(Console.ReadLine());
+
+            switch (miktar)
+            {
+                case <= 0:
+                    Console.WriteLine("Fiyat pozitif olmalıdır");
+                    break;
+
+                case > 0 and < 300:
+                    Console.WriteLine(miktar);
+                    break;
+
+                case >= 300 and < 500:
+                    Console.WriteLine(miktar*0.9);
+                    break;
+
+                case >= 500 and < 600:
+                    Console.WriteLine(miktar*0.85);
+                    break;
+
+                default:
+                    Console.WriteLine(miktar * 0.80);
+                    break;
+            }
         }
 
         private static void Soru2()

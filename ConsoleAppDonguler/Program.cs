@@ -11,33 +11,153 @@ namespace ConsoleAppDonguler
             //Soru2();
             //Soru3();
             //Soru4();
-            Soru5();
+            //Soru5();
+            //Soru6();
+            //Soru7();
+            //Soru8();
+            //Soru9();
+            Soru10();
+        }
+
+        private static void Soru10()
+        {
+            int sayi = 1;
+            int toplam = 0;
+            while (sayi < 100)
+            {
+                toplam += sayi;
+                sayi++;
+            }
+            Console.WriteLine($"Sayıların toplamı : {toplam += sayi}");
+        }
+
+        private static void Soru9()
+        {
+            int sayi;
+            Console.WriteLine("Sayı giriniz:");
+            sayi = Convert.ToInt32(Console.ReadLine());
+
+            while (sayi != 0)
+            {
+                Console.WriteLine($"Sayı : {sayi} Karesi : {sayi*sayi}");
+
+                Console.WriteLine("Sayı giriniz:");
+                sayi = Convert.ToInt32(Console.ReadLine());
+            }
+        }
+
+        private static void Soru8()
+        {
+            int sayi = 1;
+            while (sayi <= 10)
+            {
+                Console.WriteLine($"Çarpımları : 7 * {sayi} = {sayi*7}");
+                sayi++;
+            }
+        }
+
+        private static void Soru7()
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                for (int j = 1; j <= 10; j++)
+                {
+
+                    Console.WriteLine($"{i} * {j} = {i*j}");
+                }
+                Console.WriteLine("-------------");
+            }
+            
+        }
+
+        private static void Soru6()
+        {
+            int not;
+            int toplam = 0;
+            int Min = 100;
+            int Max = 0;
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("Not giriniz : ");
+                not = Convert.ToInt32(Console.ReadLine());
+
+                while (not < 0 || not > 100)
+                {
+                    Console.WriteLine("Geçersiz not girdiniz tekrar giriniz : ");
+                    not = Convert.ToInt32(Console.ReadLine());
+                }
+
+                toplam += not;
+
+                if (not < Min) 
+                        Min = not;
+                if (not > Max)
+                        Max = not;
+                
+                
+            }
+            Console.WriteLine($"Min : {Min}");
+            Console.WriteLine($"Max : {Max}");
+            Console.WriteLine($"Ortalama : {toplam/10.0}");
+            Console.WriteLine($"Toplam : {toplam}");
+
         }
 
         private static void Soru5()
         {
-            int en = 0;
-            int boy = 0;
+            //int en;
+            //int boy;
+
+            //Console.WriteLine("En uzunluğunu giriniz:");
+            //en = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Boy uzunluğunu giriniz :");
+            //boy = Convert.ToInt32(Console.ReadLine());
+            
+            //Console.WriteLine("--------------");
+            
+            //for (int i = 1; i <= boy; i++)
+            //{
+            //    for (int j = 1; j <= en; j++)
+            //    {
+            //        Console.Write("*");
+
+            //    }
+            //    Console.WriteLine();
+
+            //}
+
+
+
+            int en;
+            int boy;
 
             Console.WriteLine("En uzunluğunu giriniz:");
             en = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Boy uzunluğunu giriniz :");
             boy = Convert.ToInt32(Console.ReadLine());
-            
+
             Console.WriteLine("--------------");
-            
+
             for (int i = 1; i <= en; i++)
             {
                 for (int j = 1; j <= boy; j++)
                 {
-                    Console.Write("*");
+                    if(i == 1 || i == en)
+                        Console.Write("*");
+                    else
 
+                    if(j == 1 || j == boy)
+                        Console.Write("*");
+                    else
+                        Console.Write(" ");
                 }
                 Console.WriteLine();
 
             }
-            
+
         }
 
         private static void Soru4()

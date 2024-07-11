@@ -23,12 +23,12 @@ namespace ConsoleAppDonguler
         {
             int sayi = 1;
             int toplam = 0;
-            while (sayi < 100)
+            while (sayi <= 100)
             {
                 toplam += sayi;
                 sayi++;
             }
-            Console.WriteLine($"Sayıların toplamı : {toplam += sayi}");
+            Console.WriteLine($"Sayıların toplamı : {toplam}");
         }
 
         private static void Soru9()

@@ -16,7 +16,239 @@ namespace ConsoleAppDonguler
             //Soru7();
             //Soru8();
             //Soru9();
-            Soru10();
+            //Soru10();
+            //Soru11();
+            //Soru12();
+            //Soru13();
+            //Soru14();
+            //Soru15();
+            //Soru16();
+            //RastgeleSayı();
+            Oyun();
+        }
+
+        private static void Oyun()
+        {
+            int sayi,tutulanSayi,denemeSayisi = 0;
+            tutulanSayi = new Random().Next(1, 21);
+            bool kazandiMi = false;
+            Console.WriteLine("Sayı Tahmini Oyunu! Hoşgeldiniz");
+            Console.WriteLine("10 tane tahmin hakkınız vardır");
+
+            for (int tahminAdimi = 1; tahminAdimi <= 10; tahminAdimi++)
+            {
+                denemeSayisi++;
+                Console.WriteLine($"{tahminAdimi} . tahmin hakkınızı yazınız :");
+                sayi = Convert.ToInt32(Console.ReadLine());
+                while (sayi < 1 || sayi > 20)
+                {
+                    Console.WriteLine("Lütfen [1-20] arasında giriniz");
+                    sayi = Convert.ToInt32(Console.ReadLine());
+                }
+                if (sayi == tutulanSayi)
+                {
+                    kazandiMi = true;
+                    Console.WriteLine($"Tebrikler {denemeSayisi} . denemede bildiniz");
+                    break;
+                
+                }
+                else if (sayi < tutulanSayi)
+                {
+                    Console.WriteLine("Yukarı");
+                }
+                else
+                    Console.WriteLine("Aşağı");
+            }
+            if(!kazandiMi)
+                Console.WriteLine($"Kaybettiniz Sayı : {tutulanSayi} idi");
+        }
+
+        private static void RastgeleSayı()
+        {
+            Random rastgele = new Random();
+            Console.WriteLine(rastgele.Next(1,10));
+            Console.WriteLine(rastgele.Next(int.MaxValue));
+        }
+
+        private static void Soru16()
+        {
+            int sayi,sayac = 1;
+
+            do
+            {
+                Console.WriteLine("Sayıyı giriniz:");
+                sayi =Convert.ToInt32(Console.ReadLine());
+
+                if((sayi >= 100 && sayi <= 999) || (sayi >= -999 && sayi <= -100))
+                    Console.WriteLine($"Kurala uyan sayı : {sayi}");
+
+                sayac++;
+
+            } while (sayac <= 10);
+        }
+
+        private static void Soru15()
+        {
+            string kelime;
+            
+            do
+            {
+                Console.WriteLine("Kelimeyi giriniz:");
+                kelime = Console.ReadLine();
+            } while (kelime != "ANK18");
+
+            Console.WriteLine("Bitti");
+        }
+
+        private static void Soru14()
+        {
+            int sayi,sayac = 1;
+            int sadece5 = 0, sadece3 = 0, ikisinede = 0;
+            
+
+            while (sayac <= 10)
+            {
+                Console.WriteLine("Sayıyı giriniz:");
+                sayi = Convert.ToInt32(Console.ReadLine());
+
+                if (sayi % 3 == 0 && sayi % 5 != 0)
+                    sadece3++;
+                else if (sayi % 3 != 0 && sayi % 5 == 0)
+                    sadece5++;
+                else if (sayi % 3 == 0 && sayi % 5 == 0)
+                    ikisinede++;
+
+                sayac++;
+
+
+            }
+            Console.WriteLine($"Sadece3 : {sadece3}");
+            Console.WriteLine($"Sadece5 : {sadece5}");
+            Console.WriteLine($"İkisinede : {ikisinede}");
+        }
+
+        private static void Soru13()
+        {
+            uint s1, s2,sayac,sonuc = 0;
+
+            sayac = 1;
+
+            Console.WriteLine("Sayıları giriniz:");
+            s1 =Convert.ToUInt32(Console.ReadLine());
+            s2 = Convert.ToUInt32(Console.ReadLine());
+
+            while (sayac<=s1)
+            {
+                sonuc += s2;
+                sayac++;
+            }
+            Console.WriteLine($"Sonuç : {sonuc}");
+        }
+
+        private static void Soru12()
+        {
+            int sayi1, sayi2;
+            Console.WriteLine("Sayı 1 giriniz:");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Sayı 2 giriniz:");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            int toplam = 0;
+            if (sayi1 == sayi2)
+            {
+                Console.WriteLine("Sayılar birbirine eşittir");
+                return;
+            }
+
+            //if (sayi1 > sayi2)
+            //{
+            //    while (sayi1>=sayi2)
+            //    {
+            //        toplam += sayi2;
+            //        sayi2++;
+            //    }
+
+            //}
+            //else
+            //{
+            //    while (sayi1 <= sayi2)
+            //    {
+            //        toplam += sayi1;
+            //        sayi1++;
+            //    }
+            //}
+
+            //Console.WriteLine($"Sonuç : {toplam}");
+
+            int yedek;
+
+            if(sayi2 > sayi1)
+            {
+                yedek = sayi2;
+                sayi2 = sayi1;
+                sayi1 = yedek;
+            }
+
+            while (sayi1 >= sayi2)
+            {
+                    toplam += sayi2;
+                    sayi2++;
+            }
+            Console.WriteLine($"Sonuç : {toplam}");
+        }
+
+        private static void Soru11()
+        {
+            //For
+
+            //double sayi, carp = 1;
+            //Console.WriteLine("Faktöriyel değerini istediğiniz sayıyı giriniz:");
+            //sayi = Convert.ToDouble(Console.ReadLine());
+
+            //if(sayi < 0)
+            //{
+            //    Console.WriteLine("Negatif sayıların değeri alınamaz");
+            //}
+            //else
+            //{
+            //    for (int i = 1; i <= sayi; i++)
+            //    {
+            //        carp *= i;
+            //    }
+            //    Console.WriteLine($"Girdiğiniz sayının faktöriyel değeri : {carp}");
+            //}
+
+            //While
+
+            //int i = 1, carp = 1, sayi;
+
+            //Console.WriteLine("Faktöriyel değerini istediğiniz sayıyı giriniz:");
+            //sayi = Convert.ToInt32(Console.ReadLine());
+
+            //while (sayi < 0)
+            //{
+            //    Console.WriteLine("Negatif sayıların değeri alınamaz");
+            //    sayi = Convert.ToInt32(Console.ReadLine());
+            //}
+            //while (i <= sayi)
+            //{
+            //    carp *= i;
+            //    i++;
+            //}
+            //Console.WriteLine($"Girdiğiniz sayının faktöriyel değeri : {carp}");
+
+            //Do While
+
+            //int i = 1, carp = 1, sayi;
+            //Console.WriteLine("Faktöriyel değerini istediğiniz sayıyı giriniz:");
+            //sayi =Convert.ToInt32(Console.ReadLine());
+
+            //do
+            //{
+            //    carp *= i;
+            //    i++;
+
+            //} while (i <= sayi);
+            //Console.WriteLine($"Girdiğiniz sayının faktöriyel değeri : {carp}");
         }
 
         private static void Soru10()

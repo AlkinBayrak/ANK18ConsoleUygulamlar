@@ -15,7 +15,7 @@ namespace ConsoleAppDonguler
             //Soru6();
             //Soru7();
             //Soru8();
-            //Soru9();
+            Soru9();
             //Soru10();
             //Soru11();
             //Soru12();
@@ -24,7 +24,7 @@ namespace ConsoleAppDonguler
             //Soru15();
             //Soru16();
             //RastgeleSayı();
-            Oyun();
+            //Oyun();
         }
 
         private static void Oyun()

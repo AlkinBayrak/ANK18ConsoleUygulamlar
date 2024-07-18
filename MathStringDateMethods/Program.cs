@@ -12,7 +12,19 @@
             //Soru6();
             //Soru7();
             //Soru8();
-            Soru9();
+            //Soru9();
+            //Soru10();
+            //Soru11();
+            //Soru12();
+            //Soru13();
+            //Soru14();
+            //Soru15();
+            //Soru16();
+            //Soru17();
+            //Soru18();
+            //Soru19();
+            //Soru20();
+            Soru21();
 
             //int x;
 
@@ -67,6 +79,143 @@
             //    Console.WriteLine("Lütfen sayı giriniz:");
             //    sayiAdayi = Console.ReadLine();
             //}
+
+        }
+
+        private static void Soru21()
+        {
+            DateTime tarih;
+            DateTime tarih2;
+
+            Console.WriteLine("Bir tarih giriniz:");
+            tarih = Convert.ToDateTime(Console.ReadLine());
+
+            Console.WriteLine("Bir tarih giriniz:");
+            tarih2 = Convert.ToDateTime(Console.ReadLine());
+
+            TimeSpan fark = (tarih - tarih2);
+            Console.WriteLine(fark.TotalDays);
+            
+
+        }
+
+        private static void Soru20()
+        {
+            DateTime now = DateTime.Now;
+
+            DateTime dogumTarihi;
+
+            Console.WriteLine("Doğum tarihini giriniz:");
+            dogumTarihi = Convert.ToDateTime(Console.ReadLine());
+
+            Console.WriteLine($"Yaşınız : {now.Year - dogumTarihi.Year}");
+
+        }
+
+        private static void Soru19()
+        {
+            DateTime now = DateTime.Now;
+            Console.WriteLine($"{now.ToLongDateString()}  {now.ToShortTimeString()}");
+        }
+
+        private static void Soru18()
+        {
+            DateTime now = DateTime.Now;
+            Console.WriteLine($"{now.ToShortDateString()}");
+        }
+
+        private static void Soru17()
+        {
+            DateTime now = DateTime.Now;
+
+            Console.WriteLine($"{now.ToLongDateString()}  {now.ToLongTimeString()}");
+            Console.WriteLine($"{now.ToShortDateString()}  {now.ToShortTimeString()}");
+
+        }
+
+        private static void Soru16()
+        {
+            string metin;
+            Console.WriteLine("Bir cümle giriniz:");
+            metin = Console.ReadLine();
+            string metin2;
+            Console.WriteLine("Lütfen değiştirmek istediğiniz kelimeyi giriniz:");
+            metin2 = Console.ReadLine();
+            string metin3;
+            Console.WriteLine("Yerine hangi kelimeyi yazıcaksınız");
+            metin3 = Console.ReadLine();
+
+            Console.WriteLine(metin.Replace(metin2,metin3));
+        }
+
+        private static void Soru15()
+        {
+            string metin = "mErhHAba";
+
+            Console.WriteLine(metin.ToUpper());
+            Console.WriteLine(metin.ToLower());
+        }
+
+        private static void Soru14()
+        {
+            string metin,metin2,metin3;
+
+            Console.WriteLine("Adınızı giriniz:");
+            metin = Console.ReadLine();
+
+            Console.WriteLine("Soyadınızı giriniz:");
+            metin2 = Console.ReadLine();
+
+
+            Console.WriteLine("Yaşınızı giriniz:");
+            metin3 = Console.ReadLine();
+
+            Console.WriteLine(String.Concat($"Benim adım {metin} , Benim soyadım {metin2}, Benim yaşım {metin3}"));
+            
+        }
+
+        private static void Soru13()
+        {
+            string metin = "merhabaa nasılsıın ahahaha";
+            Console.WriteLine(metin.IndexOf('a'));
+        }
+
+        private static void Soru12()
+        {
+            string m1;
+            Console.WriteLine("Lütfen bir kelime giriniz:");
+            m1 = Console.ReadLine();
+
+            Console.WriteLine("*" +m1.Trim()+"*");
+            Console.WriteLine("*"+m1+"*");
+
+        }
+
+        private static void Soru11()
+        {
+            string m1;
+            string m2;
+
+            Console.WriteLine("Lütfen bir kelime giriniz:");
+            m1 = Console.ReadLine();
+
+            Console.WriteLine("Lütfen bir kelime giriniz:");
+            m2 = Console.ReadLine();
+
+            Console.WriteLine(String.Compare(m1, m2)); 
+
+        }
+
+        private static void Soru10()
+        {
+            string metin;
+            Console.WriteLine("Cümleyi giriniz:");
+            metin = Console.ReadLine();
+
+            if(metin.Contains("hava"))
+                Console.WriteLine("Var");
+            else
+                Console.WriteLine("Yok");
 
         }
 

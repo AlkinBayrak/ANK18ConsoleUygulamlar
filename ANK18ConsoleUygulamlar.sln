@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppKosulUyg", "Conso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppDonguler", "ConsoleAppDonguler\ConsoleAppDonguler.csproj", "{5C12E551-BC0F-45D9-B38F-ECF3F848029D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathStringDateMethods", "MathStringDateMethods\MathStringDateMethods.csproj", "{44E586FD-824F-4E9A-8BC0-B6470671A9E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathStringDateMethods", "MathStringDateMethods\MathStringDateMethods.csproj", "{44E586FD-824F-4E9A-8BC0-B6470671A9E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppDegiskenDonusumler", "ConsoleAppDegiskenDonusumler\ConsoleAppDegiskenDonusumler.csproj", "{380B5158-3BF1-4937-8D54-55EC5CB941B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{44E586FD-824F-4E9A-8BC0-B6470671A9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44E586FD-824F-4E9A-8BC0-B6470671A9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44E586FD-824F-4E9A-8BC0-B6470671A9E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380B5158-3BF1-4937-8D54-55EC5CB941B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380B5158-3BF1-4937-8D54-55EC5CB941B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380B5158-3BF1-4937-8D54-55EC5CB941B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380B5158-3BF1-4937-8D54-55EC5CB941B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

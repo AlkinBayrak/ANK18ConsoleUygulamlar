@@ -9,7 +9,7 @@ namespace ConsoleAppDegiskenDonusumler
             //Soru2();
             //Soru3();
             //Soru4();
-            Soru5();
+            //Soru5();
         }
 
         private static void Soru5()
@@ -30,6 +30,7 @@ namespace ConsoleAppDegiskenDonusumler
             }
             foreach (int sayi in sayilar)
                 Console.WriteLine(sayi);
+
         }
 
         private static void Soru4()
